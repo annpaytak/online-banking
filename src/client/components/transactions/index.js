@@ -3,7 +3,7 @@ import React from 'react';
 const Transactions = () => {
     const transactions = [
         {
-            id: 1987656789,
+            id: 1987656788,
             expenseAmount: 300,
             cashbackPercentage: 3,
             balanceAfter: 9700,
@@ -23,7 +23,7 @@ const Transactions = () => {
         <div>
             <ul>
                 {transactions.map(transaction => (
-                    <li>
+                    <li key={transaction.id}>
                         <span>- {transaction.expenseAmount}</span>
                         <span>{transaction.name}</span>
                         <span>category: {transaction.category}</span>

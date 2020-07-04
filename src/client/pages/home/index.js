@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+
 
 import WelcomePage from '../welcome';
 import Transactions from '../../components/transactions';
@@ -17,13 +17,6 @@ const HomePage = () => {
                <Wallet />
                <Spendings />
            </main>
-            <footer>
-                <button>
-                    <Link to='account'>
-                        account
-                    </Link>
-                </button>
-            </footer>
         </div>
     );
 };
