@@ -1,5 +1,6 @@
 import React from 'react';
 
+// templates
 import Signin from '../../components/signin';
 import BecomeClient from '../../components/become-client';
 

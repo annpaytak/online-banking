@@ -1,15 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
-import WelcomePage from '../welcome';
+//templates
 import Transactions from '../../components/transactions';
 import Wallet from '../../components/wallet';
 import Spendings from '../../components/spendings';
 
 const HomePage = () => {
-    const authenticated = true;
-
-    if(!authenticated) return <WelcomePage/>;
     return (
         <div>
            <main>
@@ -17,13 +13,6 @@ const HomePage = () => {
                <Wallet />
                <Spendings />
            </main>
-            <footer>
-                <button>
-                    <Link to='account'>
-                        account
-                    </Link>
-                </button>
-            </footer>
         </div>
     );
 };
