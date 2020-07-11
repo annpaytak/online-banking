@@ -41,7 +41,7 @@ const BecomeClient = (props) => {
             roles: [role]
         };
 
-        const response = userService.signup(userData);
+        const response = await userService.signup(userData);
         console.log(response);
 
         setSubmittedSuccessfully(true);

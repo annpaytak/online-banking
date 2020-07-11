@@ -34,14 +34,13 @@ export default class AuthServices {
 
     async signup(userData) {
         let response = await api.createUser(userData);
+        console.log(response)
 
         if (response.status === 200) { // if (status[response.status] === 'success')
-            let json = await response.json();
             // {
             //     "message": "User was registered successfully."
             // }
-            console.log(json)
-            return json;
+            return response;
         }
 
         console.log('response error:', response);
