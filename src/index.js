@@ -8,6 +8,7 @@ import Root from './client/Root';
 import UserContext from './client/context';
 import UserService from './client/services/auth.service';
 const userService = new UserService();
+import './client/styles';
 
 ReactDOM.render(
   <React.StrictMode>
