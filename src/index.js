@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
-
 import * as serviceWorker from './serviceWorker';
 
-import Root from "./client/Root";
+import Root from './client/Root';
+
+import UserContext from './client/context';
+import UserService from './client/services/auth.service';
+const userService = new UserService();
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
-          <Root />
-      </Router>
+      <UserContext.Provider value={userService}>
+          <Router>
+              <Root />
+          </Router>
+      </UserContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
