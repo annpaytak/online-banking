@@ -11,7 +11,8 @@ const User = mongoose.model(
                 type: mongoose.Schema.Types.ObjectId,
                 ref: "Role"
             }
-        ]
+        ],
+        cardId: String
     })
 );
 // roles is an array that contains ids in roles collection as reference.

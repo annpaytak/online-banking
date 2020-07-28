@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
 
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
+require('./routes/card.routes')(app);
 
 const PORT = process.env.PORT || 3001;
 
